@@ -1,20 +1,116 @@
-.container {
+.main {
+  background-color: rgb(198, 198, 198);
+  border-radius: 10px;
+  height: 100vh;
+  margin-top: -14px; 
+  padding-top: 60px; 
   position: fixed;
-  top: 50%;       
-  left: 50%;    
-  transform: translate(-50%, -50%);     
-  width: 1000px;
-  height: 400px;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  border-radius: 5%;
-  background: radial-gradient(circle, #FFDF37 30%, #FBAC08);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;                
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-h2 {
-  font-size: 24px; /* Adjust the font size as needed */
+.box{
+      border-radius: 10px;
+      height: 500px;
+      width: 1400px;
+      background-color: blueviolet;
+      box-shadow: 0 0 10px black;
+      margin-top: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+}
+
+
+.enterUrl {
+  border: 2px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 10px;
+  width: 400px;
+  display: flex;
+  margin-left: 440px;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+
+.enterUrl:focus {
+  outline: none;
+  border-color: rgb(1, 11, 21);
+  box-shadow: 0 0 5px rgb(0, 9, 18);
+} 
+
+.convertUrl {
+  background-color: #000;
+  color: #FFFFFF;
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 800px;
+  margin-top: 20px;
+  border: none; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.convertUrl:focus {
+  outline: none; 
+  box-shadow: 0 0 5px rgb(0, 9, 18), 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+.shortUrl{
+  border: 2px solid #FFFFFF;
+  border-radius: 15px;
+  /* padding: 10px; */
+  width: 300px;
+  height: 35PX;
+  display: flex;
+  margin-left: 440px;
+  margin-top: 110px;
+  padding-left: 2%;
+  font-family: Arial, sans-serif;
+ 
+}
+
+.shortUrl:focus {
+  outline: none;
+  border-color: rgb(1, 11, 21);
+  box-shadow: 0 0 5px rgb(0, 9, 18);
+} 
+
+
+.copyShortUrl{
+margin-left: 750px;
+margin-bottom: 100px;
+border: none; 
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+background-color: #000;
+color: #FFFFFF;
+width: 90px;
+height: 30px;
+border-radius: 10px; 
+}
+
+
+
+.copyShortUrl:focus {
+  outline: none; 
+  box-shadow: 0 0 5px rgb(0, 9, 18), 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+#caution{
+  display: flex;
+  width: 400px;
+  height: 20px;
+  margin-left: 450px;
+  margin-top: 90px;
+  color: #FFFFFF;
 }

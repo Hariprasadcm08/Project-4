@@ -1,18 +1,18 @@
-const mongoose = require("mongoose")
-const express = require("express")
-const route = require("./routes/route")
-const app = express()
+const mongoose = require("mongoose");
+const express = require("express");
+const route = require("./routes/route");
+const app = express();
+const cors = require('cors');
 
-app.use(express.json())
+app.use(express.json());
+app.use(cors());
 
-mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://avinash01:avikumarsingh@avinash.qmdqwkw.mongodb.net/url",
-{useNewUrlParser:true})
+mongoose.connect("mongodb+srv://hariprasadcm:harIprasad@cluster0.ahvii9p.mongodb.net/urlshortner", { useNewUrlParser: true })
+  .then(() => console.log("MongoDB connected"))
+  .catch(err => console.error(err));
 
-.then(() => console.log("MongoDB is connected"))
-.catch(err => console.log(err))
+app.use("/", route);
 
-app.use("/",route)
-
-app.listen(3000, function(){
-    console.log("Express port is running on "+3000)})
+app.listen(5000, () => {
+  console.log("Express server is running on port 5000");
+});
