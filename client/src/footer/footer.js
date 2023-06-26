@@ -1,12 +1,12 @@
-const Footer = () =>{
+const Footer = () => {
     return (
-    <div >
+        <div >
             <footer class="Footer">
-  <p>&copy; 2023   TinyLinker . All rights reserved.</p>
-  <p id="yo">Terms of Service | Privacy Policy | About  </p>
-</footer>
+                <h4>&copy; 2023   TinyLinker . All rights reserved.</h4>
+                <h4 id="yo">Terms of Service | Privacy Policy   </h4>
+            </footer>
 
-    </div>
+        </div>
     )
 }
 

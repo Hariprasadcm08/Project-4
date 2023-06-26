@@ -1,10 +1,12 @@
 .main {
-  background-color: rgb(198, 198, 198);
+  background: linear-gradient(to right, #ffd700, #ff8c00, #ffd700);
+
+
   border-radius: 10px;
   height: 100vh;
   margin-top: -14px; 
   padding-top: 60px; 
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -14,7 +16,9 @@
       border-radius: 10px;
       height: 500px;
       width: 1400px;
-      background-color: blueviolet;
+      background: linear-gradient(to right, #ffd700, #ff8c00, #ffd700);
+
+
       box-shadow: 0 0 10px black;
       margin-top: 18px;
       position: absolute;
@@ -26,7 +30,7 @@
 
 
 .enterUrl {
-  border: 2px solid #FFFFFF;
+  border: 2px solid #000;
   border-radius: 15px;
   padding: 10px;
   width: 400px;
@@ -66,14 +70,13 @@
 
 
 .shortUrl{
-  border: 2px solid #FFFFFF;
+  border: 2px solid #000;
   border-radius: 15px;
-  /* padding: 10px; */
   width: 300px;
   height: 35PX;
   display: flex;
   margin-left: 440px;
-  margin-top: 110px;
+  margin-top: 90px;
   padding-left: 2%;
   font-family: Arial, sans-serif;
  
@@ -87,8 +90,8 @@
 
 
 .copyShortUrl{
-margin-left: 750px;
-margin-bottom: 100px;
+margin-left: 770px;
+/* margin-bottom: -900px; */
 border: none; 
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 background-color: #000;
@@ -112,5 +115,22 @@ border-radius: 10px;
   height: 20px;
   margin-left: 450px;
   margin-top: 90px;
-  color: #FFFFFF;
+  color: #000;
+}
+
+.notification {
+  position: absolute;
+  
+  top: 400px;
+  right:40%;
+  margin-left: 500px;
+  margin-bottom: 900px;
+}
+
+#noti{
+  color: #000;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 20px;
+  white-space: nowrap;
 }
