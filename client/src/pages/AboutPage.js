@@ -1,6 +1,6 @@
 import React from 'react';
-import '../NavBar/navBar.css'
-import Footer from '../Footer/footer'
+import '../navBar/navBar.css'
+import Footer from '../footer/footer'
 import "../Container/container.css"
 import "../pages/AboutPage.css"
 const AboutPage = () => {

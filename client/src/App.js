@@ -1,9 +1,9 @@
-import NavBar from './NavBar/navBar';
-import './NavBar/navBar.css';
+import NavBar from './navBar/navBar';
+import './navBar/navBar.css';
 import Container from './Container/container';
 import  './Container/container.css';
-import Footer from './Footer/footer';
-import  './Footer/footer.css';
+import Footer from './footer/footer';
+import  './footer/footer.css';
 
 
 const App=()=>{

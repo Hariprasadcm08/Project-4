@@ -29,8 +29,9 @@ function Container() {
         alert('Please enter a URL to shorten');
         return;
       }
-      const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
-       if (!urlRegex.test(longUrl)) {
+      const urlRegex = /^(https?:\/\/)?(?:w{3}\.)?([^\s\/$.?#]+\.[a-zA-Z]{2,3})(\/[^\s]*)?$/;
+
+      if (!urlRegex.test(longUrl)) {
         alert('Invalid URL format. Please enter a valid URL to shorten.');
         return;
       }
